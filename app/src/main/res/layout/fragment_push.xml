@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".ui.PushFragment">
+
+    <Button
+        android:id="@+id/initNotification"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Init Notification service"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fmcPushToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="fcm token"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/samplePush"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="display sample push (local)"
+        />
+
+    <Button
+        android:id="@+id/triggerPushEvent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Trigger an Event"
+        />
+
+</LinearLayout>

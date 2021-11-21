@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".ui.EventsFragment">
+
+    <Button
+        android:id="@+id/sendSimpleEventBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Simple event"
+        />
+
+    <Button
+        android:id="@+id/sendEventWithDataBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send event with details"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:maxLines="1"
+        android:paddingTop="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/eventDetails"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Details"
+        android:inputType="text|textMultiLine"
+        app:helperTextEnabled="true"
+        app:helperText="enter a valid json"
+        android:paddingVertical="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="4"
+            android:text="{\n  'numerical_field': 1,\n  'string_field':'hi',\n  'date_field':'1970-01-01',\n  'array_field':[0,1,2],\n  'object_field':{'key1':'val1','key2':'val2'}\n}"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sendCustomEventBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Custom event"
+        />
+
+</LinearLayout>
