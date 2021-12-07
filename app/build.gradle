@@ -46,7 +46,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     //InTrack SDK
-    implementation 'ir.smartech.intrack:android-sdk:1.1.0'
+    implementation 'ir.smartech.intrack:android-sdk:1.1.1'
 
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:28.4.1')
