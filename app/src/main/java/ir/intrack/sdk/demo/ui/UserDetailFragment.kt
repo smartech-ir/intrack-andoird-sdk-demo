@@ -40,12 +40,24 @@ class UserDetailFragment : Fragment() {
         val dateFormatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
 
         details.userId = this.view?.findViewById<TextInputLayout>(R.id.userId)?.editText?.text.toString()
-        details.firstName = this.view?.findViewById<TextInputLayout>(R.id.userFirstName)?.editText?.text.toString()
-        details.lastName = this.view?.findViewById<TextInputLayout>(R.id.userLastName)?.editText?.text.toString()
-        details.email = this.view?.findViewById<TextInputLayout>(R.id.userEmail)?.editText?.text.toString()
+        val firstName = this.view?.findViewById<TextInputLayout>(R.id.userFirstName)?.editText?.text.toString()
+        if(!firstName.isNullOrBlank()){
+            details.firstName = firstName
+        }
+        val lastName = this.view?.findViewById<TextInputLayout>(R.id.userLastName)?.editText?.text.toString()
+        if(!lastName.isNullOrBlank()){
+            details.lastName = lastName;
+        }
+        val email = this.view?.findViewById<TextInputLayout>(R.id.userEmail)?.editText?.text.toString()
+        if(!email.isNullOrBlank()){
+                details.email = email
+        }
         details.emailOptIn = this.view?.findViewById<SwitchMaterial>(R.id.userEmailOptIn)?.isChecked
         details.hashedEmail = this.view?.findViewById<TextInputLayout>(R.id.userHashedEmail)?.editText?.text.toString()
-        details.phone = this.view?.findViewById<TextInputLayout>(R.id.userPhone)?.editText?.text.toString()
+        val phone = this.view?.findViewById<TextInputLayout>(R.id.userPhone)?.editText?.text.toString()
+        if(!phone.isNullOrBlank()){
+            details.phone = phone
+        }
         details.smsOptIn = this.view?.findViewById<SwitchMaterial>(R.id.userSmsOptIn)?.isChecked
         details.hashedPhone = this.view?.findViewById<TextInputLayout>(R.id.userHashedPhone)?.editText?.text.toString()
         details.gender = userGender[this.view?.findViewById<RadioButton>(view?.findViewById<RadioGroup>(R.id.userGender)!!.checkedRadioButtonId)?.text]
@@ -54,7 +66,7 @@ class UserDetailFragment : Fragment() {
         details.city = this.view?.findViewById<TextInputLayout>(R.id.userCity)?.editText?.text.toString()
         details.state = this.view?.findViewById<TextInputLayout>(R.id.userState)?.editText?.text.toString()
         val birthDay= this.view?.findViewById<TextInputLayout>(R.id.userBirthDay)?.editText?.text.toString()
-        if(birthDay!=""){
+        if(!birthDay.isNullOrBlank()){
             details.birthday = dateFormatter.parse(birthDay)
         }
         details.userAttributes = toMap(JSONObject(this.view?.findViewById<TextInputLayout>(R.id.userAttributes)?.editText?.text.toString()))

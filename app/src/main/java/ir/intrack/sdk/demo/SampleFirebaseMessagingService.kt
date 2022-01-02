@@ -36,7 +36,7 @@ class SampleFirebaseMessagingService : FirebaseMessagingService()  {
             intent = Intent(applicationContext, MainActivity::class.java)
         }
 
-        val result = InTrack.displayMessage(applicationContext, remoteMessage.data, getString(R.string.default_notification_channel_id), R.drawable.ic_launcher_foreground, intent)
+        val result = InTrack.displayMessage(applicationContext, remoteMessage.data, getString(R.string.default_notification_channel_id), R.mipmap.ic_launcher, intent)
 
         if (result == null) {
             Log.i(TAG, "Message doesn't have anything to display or wasn't sent from InTrack, so it cannot be handled by InTrack SDK");

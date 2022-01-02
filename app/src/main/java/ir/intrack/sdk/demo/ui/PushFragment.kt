@@ -69,7 +69,7 @@ class PushFragment : Fragment() {
                 this.requireActivity().application,
                 message,
                 getString(R.string.default_notification_channel_id),
-                R.drawable.ic_launcher_foreground,
+                R.mipmap.ic_launcher,
                 intent
             )
 
