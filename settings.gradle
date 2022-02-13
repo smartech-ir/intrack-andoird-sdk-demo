@@ -5,9 +5,7 @@ dependencyResolutionManagement {
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
 
-        maven{
-            url("https://s01.oss.sonatype.org/content/repositories/irsmartech-1023");
-        }
+     
     }
 }
 rootProject.name = "InTrack Android SDK demo"
