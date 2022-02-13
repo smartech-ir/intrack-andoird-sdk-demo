@@ -28,8 +28,8 @@ class EventsFragment : Fragment() {
 
         val simpleEvent = view.findViewById<Button>(R.id.sendSimpleEventBtn)
         simpleEvent.setOnClickListener {
-            InTrack.recordEvent("simple event")
-            val toast = Toast.makeText(view.context, "simple event sent", Toast.LENGTH_SHORT)
+            InTrack.recordEvent("simple_event")
+            val toast = Toast.makeText(view.context, "simple_event sent", Toast.LENGTH_SHORT)
             toast.show()
         }
 
@@ -43,8 +43,8 @@ class EventsFragment : Fragment() {
                 "object_field" to mapOf("key1" to "value1", "key2" to "value2"),
             )
 
-            InTrack.recordEvent("detailed event", eventDetails)
-            val toast = Toast.makeText(view.context, "detailed event sent", Toast.LENGTH_SHORT)
+            InTrack.recordEvent("detailed_event", eventDetails)
+            val toast = Toast.makeText(view.context, "detailed_event sent", Toast.LENGTH_SHORT)
             toast.show()
         }
 

@@ -60,7 +60,7 @@ class PushFragment : Fragment() {
 //                "sound" to "",
 //                "link" to "",
                 "media" to "https://docs.intrack.ir/img/logo.png",
-//                "buttons" to "[{\"t\":\"google\",\"l\":\"https:\\/\\/google.com\"},{\"t\":\"facebook\",\"l\":\"https:\\/\\/facebook.com\"}]"
+                "buttons" to "[{\"t\":\"smartech\",\"l\":\"https:\\/\\/smartech.ir\"},{\"t\":\"intrack\",\"l\":\"https:\\/\\/intrack.ir\"}]"
             )
 
             val intent = Intent(this.requireActivity().application, PushSampleActivity::class.java)
@@ -76,7 +76,7 @@ class PushFragment : Fragment() {
         }
 
         view.findViewById<Button>(R.id.triggerPushEvent).setOnClickListener {
-            InTrack.recordEvent("event push trigger")
+            InTrack.recordEvent("event_push_trigger")
         }
 
         return view

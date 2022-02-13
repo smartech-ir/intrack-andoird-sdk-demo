@@ -3,283 +3,297 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="false">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical"
-    tools:context=".ui.UserDetailFragment">
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userId"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="User ID"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userFirstName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="First Name"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userLastName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Last Name"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/userEmailOptIn"
-        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:checked="true"
-        android:text="email opt-in"/>
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        tools:context=".ui.UserDetailFragment">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userHashedEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Hashed email"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="User ID"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Phone Number"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="First Name"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/userSmsOptIn"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:checked="true"
-        android:text="SMS opt-in"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userHashedPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Hashed phoone"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="Last Name"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <RadioGroup
-        android:id="@+id/userGender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:id="@+id/userGenderMale"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/userGender"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/userGenderMale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="male"/>
+            <RadioButton
+                android:id="@+id/userGenderFemale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="female"/>
+            <RadioButton
+                android:id="@+id/userGenderOther"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="other"/>
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userHashedEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hashed email"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userHashedPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hashed phoone"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/userEmailOptIn"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="male"/>
-        <RadioButton
-            android:id="@+id/userGenderFemale"
-            android:layout_width="match_parent"
+            android:checked="true"
+            android:text="email opt-in"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/userSmsOptIn"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="female"/>
-        <RadioButton
-            android:id="@+id/userGenderOther"
-            android:layout_width="match_parent"
+            android:checked="true"
+            android:text="SMS opt-in"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/userPushOptIn"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="other"/>
-    </RadioGroup>
+            android:checked="true"
+            android:text="Push opt-in"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userBirthDay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Birth day"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/userWebPushOptIn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="Web Push opt-in"/>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userBirthDay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="Birth day"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userCompany"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Company"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userCompany"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="Company"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userCountry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Country"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userCountry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="Country"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userState"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="State"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userState"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="State"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userCity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="City"
-        android:maxLines="1"
-        android:paddingTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userCity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="City"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <com.google.android.material.textfield.TextInputLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/userAttributes"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="User Attributes"
-        android:inputType="text|textMultiLine"
-        app:helperTextEnabled="true"
-        app:helperText="enter a valid json"
-        android:paddingVertical="10dp">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/userAttributes"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="4"
-            android:text="{\n'attr1': 'value1',\n'attr2':'value2'\n}"
+            android:hint="User Attributes"
+            android:inputType="text|textMultiLine"
+            app:helperTextEnabled="true"
+            app:helperText="enter a valid json"
+            android:paddingVertical="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:text="{\n'attr1': 'value1',\n'attr2':'value2'\n}"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/userLoginBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
             />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/userUpdateBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Update profile"
+            />
 
-    <Button
-        android:id="@+id/userLoginBtn"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        />
-
-    <Button
-        android:id="@+id/userUpdateBtn"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Update profile"
-        />
-
-    <Button
-        android:id="@+id/userLogoutBtn"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="logout"
-        />
-</LinearLayout>
+        <Button
+            android:id="@+id/userLogoutBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            />
+    </LinearLayout>
 </ScrollView>

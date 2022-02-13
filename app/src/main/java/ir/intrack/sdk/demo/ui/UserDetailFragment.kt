@@ -50,7 +50,7 @@ class UserDetailFragment : Fragment() {
         }
         val email = this.view?.findViewById<TextInputLayout>(R.id.userEmail)?.editText?.text.toString()
         if(!email.isNullOrBlank()){
-                details.email = email
+            details.email = email
         }
         details.emailOptIn = this.view?.findViewById<SwitchMaterial>(R.id.userEmailOptIn)?.isChecked
         details.hashedEmail = this.view?.findViewById<TextInputLayout>(R.id.userHashedEmail)?.editText?.text.toString()
@@ -59,6 +59,8 @@ class UserDetailFragment : Fragment() {
             details.phone = phone
         }
         details.smsOptIn = this.view?.findViewById<SwitchMaterial>(R.id.userSmsOptIn)?.isChecked
+        details.pushOptIn = this.view?.findViewById<SwitchMaterial>(R.id.userPushOptIn)?.isChecked
+        details.webPushOptIn = this.view?.findViewById<SwitchMaterial>(R.id.userWebPushOptIn)?.isChecked
         details.hashedPhone = this.view?.findViewById<TextInputLayout>(R.id.userHashedPhone)?.editText?.text.toString()
         details.gender = userGender[this.view?.findViewById<RadioButton>(view?.findViewById<RadioGroup>(R.id.userGender)!!.checkedRadioButtonId)?.text]
         details.company = this.view?.findViewById<TextInputLayout>(R.id.userCompany)?.editText?.text.toString()
