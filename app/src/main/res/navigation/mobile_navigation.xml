@@ -28,4 +28,10 @@
         android:name="ir.intrack.sdk.demo.ui.PushFragment"
         android:label="@string/menu_push_notification"
         tools:layout="@layout/fragment_push" />
+
+    <fragment
+        android:id="@+id/nav_crash"
+        android:name="ir.intrack.sdk.demo.ui.CrashFragment"
+        android:label="@string/menu_crash"
+        tools:layout="@layout/fragment_crash" />
 </navigation>

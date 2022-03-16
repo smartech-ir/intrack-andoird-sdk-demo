@@ -33,6 +33,11 @@ class MainFragment : Fragment() {
             view.findNavController().navigate(R.id.nav_push_notification)
         }
 
+        val crashCard = view.findViewById<MaterialCardView>(R.id.crashReportCard)
+        crashCard.setOnClickListener {
+            view.findNavController().navigate(R.id.nav_crash)
+        }
+
         return view
     }
 }

@@ -41,7 +41,8 @@ class App : Application() {
                 .setApplication(this)
                 .setAppKey(inTrackAppKey)
                 .setAuthKey(inTrackAuthKey)
-                .setLoggingEnabled(true)
+                .enableCrashReporting() //enabling crash reports
+                .setLoggingEnabled(true) //enabling logging
         )
 
 

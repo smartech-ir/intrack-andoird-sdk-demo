@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".ui.CrashFragment">
+
+    <Button
+        android:id="@+id/recordHandledExceptionBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="record Handled Exception"
+        />
+
+    <Button
+        android:id="@+id/recordUnhandledExceptionBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="record Unhandled Exception"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="15dp"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/throwExceptionBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Throw Exception (crash)"
+        />
+
+
+</LinearLayout>

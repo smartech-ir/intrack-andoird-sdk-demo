@@ -9,6 +9,7 @@
     <string name="menu_events">Events</string>
     <string name="menu_user_details">User Details</string>
     <string name="menu_push_notification">Push Notification</string>
+    <string name="menu_crash">Crash Report</string>
 
     <string name="default_notification_channel_id">intrack_default_channel</string>
     <string name="default_notification_channel_name"><![CDATA[News & announcements]]></string>
